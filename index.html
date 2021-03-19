@@ -9,24 +9,23 @@
   <title>Landing Page</title>
 </head>
 <body>
-  <nav id="nav">  
-    <span id="home"><a href="#">FGC Nation</a></span>
-    <ul id="top-nav">
-      <li class="nav">Guides</li>
-      <li class="nav">Tournaments</li>
-      <li class="nav">Support</li>
-    </ul>
-  </nav>
-  <div id="container">
-    <header>
+    <header id="header">
+      <nav id="nav-bar">  
+        <span id="home"><a href="#">FGC Nation</a></span>
+        <ul id="top-nav">
+        <a href="#title"><li class="nav-link">Guides</li></a>
+        <a href="#feature"><li class="nav-link">Tournaments</li></a>
+        <a href="#pricing"><li class="nav-link">Support</li></a>
+        </ul>
+      </nav>
       <h1 id="title">The Home of Fighting Games</h1>
-      <form action="">
-        <input type="search" placeholder="Enter your email address" required>
-        <input type="submit" name="subscribe" id="sub-btn" class="btn" value="GET STARTED">
+      <form action="https://www.freecodecamp.com/email-submit" id="form">
+        <input type="email" placeholder="Enter your email address" required id="email">
+        <input type="submit" name="subscribe" id="submit" class="btn" value="GET STARTED">
       </form>
     </header>
-    <main>
-      <section id="about">
+    <main id="container">
+      <section id="feature">
         <div>
           <i class="fas fa-fire fa-3x"></i> 
           <div class="about-text">
@@ -49,10 +48,10 @@
           </div>
         </div>
       </section>
-      <section id="video">
-        <iframe src="https://www.youtube.com/embed/l8H4MQ4kKsw" frameborder="0"></iframe>
+      <section>
+        <iframe id="video"src="https://www.youtube.com/embed/l8H4MQ4kKsw" frameborder="0"></iframe>
       </section>
-      <section id="prices">
+      <section id="pricing">
         <div class="price-range">
           <h3>Basic Membership</h3>
           <p class="price">$1 per month</p>
@@ -96,6 +95,5 @@
       </ul>
       <p>Copyright 2021, FGC Nation</p>
     </footer>
-  </div>
 </body>
 </html>
